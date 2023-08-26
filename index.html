@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,9 +15,25 @@
         </div>
         <h2 id="title">Gusto</h2>
         <h3 id="artist">Zack Tabudlo ft. Al James </h3>
-        <audio src="music/gusto.mp3" controls></audio>
+        <audio src="music/gusto.mp3"></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:17</span>
+            </div>  
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+            <i class="fa-solid fa-circle-play main-button" id="play" title="Play"></i>
+            <i class="fa-solid fa-forward" id="next" title="Next"></i>
+        </div>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/94fca6de41.js" crossorigin="anonymous"></script>
 </body>
 </html>
